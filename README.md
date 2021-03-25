@@ -1,5 +1,11 @@
 ## Tuya Develop Cloud --- Fingerbot MQ Sample
 
+<p align="center">
+    <a href="https://github.com/tuya/tuya-cloud-fingerbot-demo/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/tuya/tuya-cloud-fingerbot-demo?style=flat"></a>
+    <a href="https://github.com/IoT-Technology/IOT-Technical-Guide/blob/master/LICENSE" title="License"><img src="https://img.shields.io/badge/license-MIT-green?style=flat"></a>
+    <a href="https://github.com/tuya/tuya-cloud-fingerbot-demo/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/tuya/tuya-cloud-fingerbot-demo?style=flat"></a>
+</p>
+
 [中文版](README_zh.md)|[English](README.md)
 
 ![](img/fingerbot-demo.gif)
@@ -74,6 +80,33 @@ The following functional event messages are supported
 | bindUser      | Bind the device with users accounts |
 | Delete        | Remove device                       |
 | upgradeStatus | Upgrade status                      |
+
+
+
+## Quick Start
+
+### Set Application.properties
+
+```yml
+mq.accessId= ******
+mq.accessKey= ******
+# event or event-test
+mq.env=event
+# CN_SERVER_URL:"pulsar+ssl://mqe.tuyacn.com:7285/"
+# US_SERVER_URL:"pulsar+ssl://mqe.tuyaus.com:7285/"
+# EU_SERVER_URL:"pulsar+ssl://mqe.tuyaeu.com:7285/"
+# IND_SERVER_URL:"pulsar+ssl://mqe.tuyain.com:7285/"
+mq.serverUrl=pulsar+ssl://mqe.tuyacn.com:7285/
+mq.maxRedeliverCount=3
+# true or false
+mq.debug=true
+```
+
+
+
+### Start the project
+
+Start this class **com.tuya.cloud.TuyaCloudFingerbotDemoApplication**, And look at the results
 
 
 
