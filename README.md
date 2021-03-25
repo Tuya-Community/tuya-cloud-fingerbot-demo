@@ -1,6 +1,8 @@
 ## Tuya Develop Cloud --- Fingerbot MQ Sample
 
-![](/Users/mushuwei/Desktop/fingerbot-demo.gif)
+[中文版](README_zh.md)|[English](README.md)
+
+![](img/fingerbot-demo.gif)
 
 One of the most intriguing smart devices making waves at home and abroad recently is the Fingerbot from Adaprox. Using the app to turn lights on and off, voice activated and remotely open your office computer, you can say that any remote control of switches and buttons will be available via Fingerbot.
 
