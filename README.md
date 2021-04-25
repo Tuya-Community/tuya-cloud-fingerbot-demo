@@ -10,26 +10,25 @@
 
 ![](img/fingerbot-demo.gif)
 
-One of the most intriguing and popular smart devices in China and other countries is the Fingerbot from Adaprox. This app supports multiple functions. For example, you can use it to turn lights on and off and activate and remotely open your office computer with voice assistants. Fingerbot supports the remote control of any switches and buttons.
+One of the most intriguing and popular smart devices in the world is the Fingerbot from Adaprox. This app supports multiple functions. For example, you can use it to turn lights on and off, activate and remotely power on your office computer with voice assistants. Fingerbot supports the remote control of any switches and buttons.
 
-What is the power behind such the great Fingerbot?
+What is the power behind such a great Fingerbot?
 
-The Fingerbot is powered by the Tuya Cloud Development Platform. This is an open cloud platform for the Internet of Things created by Tuya. It provides a variety of cloud services including OpenAPI for application developers, device manufacturers, and solution providers in various industries. The Fingerbot covers general capabilities of core scenes, such as device control, smart home management and, scene automation.
+The Fingerbot is powered by the [Tuya Cloud Development Platform](https://iot.tuya.com/cloud/), an open IoT cloud platform created by Tuya. The platform provides a variety of cloud services including OpenAPI for application developers, device manufacturers, and solution providers in various industries. The Fingerbot covers general capabilities of core scenes, such as device control, smart home management, and scene automation.
 
-Message Service is used to actively push events to external partners based on **Pulsar**. This enables real-time and persistent messaging.
+Message service is used to actively push events to external partners based on **Pulsar**. This enables real-time and persistent messaging.
 
 ### Security
 
-- Authentication Tuya Smart Pulsar Message Service adopts a highly customized authentication algorithm and dynamic tokens to safeguard your services. Developers can skip the implementation details and accomplish the authentication based on the provided SDK.
-- Data Security Transmission security: Tuya Smart Pulsar Message Service is used to transmit data based on the SSL. Business security: Business data is encrypted with AES-128 and attached with a signature.
-
-
+- Authentication security. Tuya Smart Pulsar Message Service adopts a highly customized authentication algorithm and dynamic tokens to safeguard your services. You can skip the implementation details and accomplish the authentication based on the provided SDK.
+- Data transmission security: Tuya Smart Pulsar Message Service transmits data based on the SSL. 
+- Business security: Business data is encrypted with AES-128 and attached with a signature.
 
 ### Request method
 
-- username: Enter the **Access ID** of the Authorization Key generated in the Cloud Development.
-- password: Enter the **Access Secret** of the Authorization Key generated in the Cloud Development.
-- url: Choose the endpoint that is closest to your location.
+- `username`: Enter the **Access ID** of the Authorization Key generated on the [Tuya Cloud Development Platform](https://iot.tuya.com/cloud/).
+- `password`: Enter the **Access Secret** of the Authorization Key generated on the [Tuya Cloud Development Platform](https://iot.tuya.com/cloud/).
+- `url`: Choose the endpoint that is closest to your location.
   - China: `pulsar+ssl://mqe.tuyacn.com:7285/`
   - America: `pulsar+ssl://mqe.tuyaus.com:7285/`
   - Europe: `pulsar+ssl://mqe.tuyaeu.com:7285/`
@@ -39,9 +38,9 @@ Message Service is used to actively push events to external partners based on **
 
 ### Procedure
 
-1. Log in to the [Cloud Development module on the Tuya IoT Platform](https://iot.tuya.com/cloud/).
+1. Log in to the [Tuya Cloud Development Platform](https://iot.tuya.com/cloud/).
 2. Create a Cloud Development project.
-3. Activate the message service in **Message Service**.
+3. Subscribe to the message service in **Message Service**.
 
 ## Features
 
@@ -77,9 +76,9 @@ The following functional event messages are supported.
 | offline       | Offline                             |
 | nameUpdate    | Modify the device name              |
 | dpNameUpdate  | Modify the data point name          |
-| bindUser      | Bind the device to users accounts   |
-| Delete        | Remove device                       |
-| upgradeStatus | Upgrade status                      |
+| bindUser      | Bind the device to user accounts   |
+| Delete        | Remove the device                       |
+| upgradeStatus | Update status                      |
 
 
 
@@ -112,9 +111,9 @@ Start this class **com.tuya.cloud.TuyaCloudFingerbotDemoApplication**, and check
 
 ## Issue feedback
 
-You can provide feedback on your issue in **Github Issue** or [submit a ticket](https://service.console.tuya.com/).
+Provide feedback on your issue in **Github Issue** or [submit a ticket](https://service.console.tuya.com/).
 
 ## License
 
-Tuya Android Home SDK Sample is available under the MIT license. For more information, see [License](https://github.com/tuya/tuya-cloud-fingerbot-demo/blob/master/LICENSE).
+Tuya Android IoT App SDK Sample is available under the MIT license. For more information, see [License](https://github.com/tuya/tuya-cloud-fingerbot-demo/blob/master/LICENSE).
 
